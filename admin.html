@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin | Clinic</title><link rel="stylesheet" href="/styles.css"></head><body>
+<header class="site-header"><a class="brand" href="/">← Back to website</a><b>Clinic Admin</b></header>
+<main class="section"><p class="eyebrow">PRIVATE AREA</p><h1>Feedback moderation</h1>
+<div class="form-card" id="loginBox"><p>Enter the admin API token configured in Cloudflare Pages secrets. For production, put this page behind Cloudflare Access.</p><label>Admin token<input id="token" type="password" autocomplete="current-password"></label><button class="button" id="load">Load feedback</button><p class="form-status" id="status" role="status"></p></div>
+<div id="items" class="feedback-list"></div></main><script src="/admin.js"></script></body></html>

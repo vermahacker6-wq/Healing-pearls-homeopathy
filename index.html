@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn about [CLINIC NAME], meet the doctor, share feedback and contact the clinic.">
+  <meta name="theme-color" content="#0f766e">
+  <title>[CLINIC NAME] | Homeopathy Clinic</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home">✚ <span>[CLINIC NAME]</span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+  <nav id="nav">
+    <a href="#home">Home</a><a href="#doctor">Doctor</a><a href="#feedback">Feedback</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">CARE • COMPASSION • CONSULTATION</p>
+      <h1>Welcome to <span>[CLINIC NAME]</span></h1>
+      <p>A calm, patient-focused clinic where your questions and concerns are heard. Replace this text with an accurate description of your clinic.</p>
+      <div class="actions"><a class="button" href="#doctor">Meet the Doctor</a><a class="button secondary" href="#contact">Contact Clinic</a></div>
+    </div>
+    <div class="hero-card"><div class="cross">✚</div><h2>Your health matters</h2><p>Personal attention. Clear communication. Respectful care.</p></div>
+  </section>
+
+  <section class="section intro">
+    <p class="eyebrow">ABOUT THE CLINIC</p><h2>Care with time and attention</h2>
+    <p>[Add a short, factual introduction to your clinic. Do not include unverified claims or promises of cure.]</p>
+  </section>
+
+  <section id="doctor" class="section doctor">
+    <div class="doctor-photo">Doctor Photo</div>
+    <div><p class="eyebrow">MEET YOUR DOCTOR</p><h2>Dr. [DOCTOR FULL NAME]</h2>
+      <p class="muted">[Verified qualification] • [Registration details, if applicable]</p>
+      <p>[Write the doctor's verified professional biography, experience and consultation approach.]</p>
+      <ul class="details">
+        <li><b>Qualifications:</b> [VERIFIED QUALIFICATIONS]</li>
+        <li><b>Experience:</b> [CONFIRMED EXPERIENCE]</li>
+        <li><b>Languages:</b> [LANGUAGES]</li>
+        <li><b>Consultation hours:</b> [CLINIC TIMINGS]</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="feedback" class="section tinted">
+    <p class="eyebrow">PATIENT FEEDBACK</p><h2>Share your experience</h2>
+    <p class="muted">Please do not include private medical details. Feedback appears publicly only after clinic approval and your consent.</p>
+    <form id="feedbackForm" class="form-card">
+      <label>Name (optional)<input name="display_name" maxlength="80" placeholder="Your name"></label>
+      <label>Rating<select name="rating" required><option value="">Choose a rating</option><option value="5">5 - Excellent</option><option value="4">4 - Very good</option><option value="3">3 - Good</option><option value="2">2 - Fair</option><option value="1">1 - Poor</option></select></label>
+      <label>Your feedback<textarea name="message" required maxlength="1000" rows="4" placeholder="Write your feedback..."></textarea></label>
+      <label class="check"><input type="checkbox" name="consent_to_display"> I agree that the clinic may display this feedback publicly after review.</label>
+      <button class="button" type="submit">Submit Feedback</button><p class="form-status" id="feedbackStatus" role="status"></p>
+    </form>
+    <div id="approvedFeedback" class="feedback-list"></div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div><p class="eyebrow">GET IN TOUCH</p><h2>Contact the clinic</h2>
+      <p><b>Address:</b> [CLINIC ADDRESS]</p><p><b>Phone:</b> <a href="tel:[CLINIC PHONE]">[CLINIC PHONE]</a></p>
+      <p><b>Email:</b> <a href="mailto:[CLINIC EMAIL]">[CLINIC EMAIL]</a></p>
+      <p><b>Hours:</b> [CLINIC TIMINGS]</p>
+      <p class="muted">Replace placeholders with verified clinic details before publishing.</p>
+    </div>
+    <form id="contactForm" class="form-card">
+      <h3>Send an enquiry</h3>
+      <label>Your name<input name="name" required maxlength="100"></label>
+      <label>Email<input name="email" type="email" maxlength="160"></label>
+      <label>Phone<input name="phone" type="tel" maxlength="30"></label>
+      <label>Message<textarea name="message" required maxlength="1500" rows="4"></textarea></label>
+      <p class="tiny">Provide either an email address or phone number. Please do not send urgent or sensitive medical information through this form.</p>
+      <button class="button" type="submit">Send Message</button><p class="form-status" id="contactStatus" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer><span>© <span id="year"></span> [CLINIC NAME]. All rights reserved.</span><a href="/admin.html">Admin Login</a><p>Information on this website is general and does not replace advice from a qualified healthcare professional. For emergencies, contact local emergency services.</p></footer>
+<script src="/app.js"></script>
+</body></html>
